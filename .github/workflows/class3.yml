@@ -28,6 +28,9 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 14
+
+      - name: create build
+        run: npm run build
  
       # Runs a set of commands using the runners shell
       - name: install surge
